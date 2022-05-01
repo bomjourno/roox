@@ -1,0 +1,27 @@
+
+.sort {
+  max-width: 152px;
+  padding: 35px 26px 100% 20px;
+  background: #BDBDBD;
+
+  &__title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+  }
+
+  &__button {
+    margin: 10px 0 0;
+    padding: 5px 15px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    background: #4B51EF;
+    border: 1px solid #4B51EF;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

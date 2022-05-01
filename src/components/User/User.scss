@@ -1,0 +1,32 @@
+.user {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 14px 0;
+  padding: 10px;
+  font-size: 11px;
+  line-height: 13px;
+  color: #A3A3A3;
+  background: #F3F3F3;
+  border-radius: 8px;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__about {
+    align-self: flex-end;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    font-size: 12px;
+    line-height: 14px;
+    color: #4B51EF;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+.user:last-of-type {
+  margin: 0;
+}

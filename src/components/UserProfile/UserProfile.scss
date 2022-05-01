@@ -1,0 +1,109 @@
+.user-profile {
+  width: 100%;
+
+  &__header {
+    display: flex;
+  }
+
+  &__title {
+    margin: 19px 161px 17px 34px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__items {
+    margin: 0;
+    padding: 20px 12px 19px 12px;
+    border: 1px solid #f3f3f3;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 438px;
+    margin: 0 0 0 36px;
+  }
+
+  &__input {
+    display: flex;
+    width: 211px;
+    margin: 0 0 10px 0;
+    padding: 5px 10px;
+    font-size: 10px;
+    line-height: 12px;
+    color: rgba(0, 0, 0, 0.3);
+    border: 1px solid #d8d8d8;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+  &__textarea {
+    display: flex;
+    min-width: 100%;
+    min-height: 55px;
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 10px;
+    line-height: 12px;
+    color: rgba(0, 0, 0, 0.3);
+    border: 1px solid #d8d8d8;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+  &__send-btn {
+    max-width: 85px;
+    margin: 10px 0 0 auto;
+    padding: 6px 10px;
+    background: #afafaf;
+    border: 0;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #ffffff;
+    pointer-events: none;
+  }
+
+  &__edit-btn {
+    align-self: center;
+    max-width: 116px;
+    padding: 6px 10px;
+    background: #4b51ef;
+    border: 0;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  &__input_error {
+    border: 1px solid red;
+  }
+
+  &__input_active {
+    color: #000000;
+  }
+
+  &__send-btn_active {
+    background: #52cf4f;
+    pointer-events: auto;
+    cursor: pointer;
+  }
+}
+
+.label {
+  display: flex;
+  position: relative;
+  margin: 0 0 3px 0;
+  font-size: 8px;
+  line-height: 9px;
+}
