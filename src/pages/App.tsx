@@ -9,26 +9,26 @@ import { useGetUsers } from "../utils/hooks"
 
 const App = () => {
   const [user, setUser] = useState<IUser>({
-    id: "string",
-    name: "string",
-    username: "string",
-    email: "string",
+    id: "",
+    name: "",
+    username: "",
+    email: "",
     address: {
-      street: "string",
-      suite: "string",
-      city: "string",
-      zipcode: "string",
+      street: "",
+      suite: "",
+      city: "",
+      zipcode: "",
       geo: {
-        lat: "string",
-        lng: "string",
+        lat: "",
+        lng: "",
       },
     },
-    phone: "string",
-    website: "string",
+    phone: "",
+    website: "",
     company: {
-      name: "string",
-      catchPhrase: "string",
-      bs: "string",
+      name: "",
+      catchPhrase: "",
+      bs: "",
     },
   })
   const [sortType, setSortType] = useState<SortType>("None")

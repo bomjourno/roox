@@ -3,7 +3,7 @@ import { Formik } from "formik"
 import "./UserProfile.scss"
 import classNames from "classnames"
 import { IUser, IUserWithComment } from "../../types/types"
-import { validationSchema } from "../../utils/constants"
+import { validationSchema } from "./validation"
 
 interface UserProps {
   user: IUser

@@ -1,6 +1,5 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { IUser } from "../types/types"
-import React from "react"
 
 interface UsersProps {
   setIsLoading: (load: boolean) => void
@@ -15,15 +14,17 @@ export function useGetUsers(): [IUser[], boolean] {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((response) => response.json())
       .then((data) => {
-        setTimeout(() => {
-          setData(data)
-          setIsLoading(false)
-        }, 500)
+        setData(data);
+        setIsLoading(false);
       })
-      .catch((err) => console.log(err.status))
+      .catch((err) => {
+        console.log(err.status)
+      })
   }
 
-  serverResponse({ setIsLoading, setData })
+  useEffect(() => {
+    serverResponse({ setIsLoading, setData })
+  }, [])
 
   return [data, isLoading]
 }
